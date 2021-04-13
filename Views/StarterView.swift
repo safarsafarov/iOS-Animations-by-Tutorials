@@ -2,6 +2,8 @@ import SwiftUI
 
 struct StarterView: View {
     @State var currentOffset = 0
+    @State var color = Color.green
+
     
     var body: some View {
         ZStack {
@@ -10,7 +12,9 @@ struct StarterView: View {
                 .foregroundColor(Color.green)
         }
         .onAppear {
-            
+            delay(seconds: 2) {
+                self.color = Color.red
+              }
         }
     }
 }
