@@ -10,6 +10,8 @@ struct StarterView: View {
             Circle()
                 .scaleEffect(0.5)
                 .foregroundColor(Color.green)
+                .animation(.default)
+
         }
         .onAppear {
             delay(seconds: 2) {
