@@ -7,7 +7,7 @@ struct ContentView : View {
     var body: some View {
         VStack(spacing: 0) {
             HeroImage(name: "hero")
-
+            
             ZStack {
                 HStack {
                     TourTitle(title: "Savanna Trek", caption: "15 mile drive followed by an hour long trek")
@@ -22,8 +22,13 @@ struct ContentView : View {
                     .scaleEffect(0.33)
                     .shadow(radius: 10)
                     .onTapGesture {
-                      self.zoomed.toggle()
+                        self.zoomed.toggle()
+                        self.scaleEffect(self.zoomed ? 1.33 : 0.33)
+                        self.position(x: self.zoomed ? 220 : 600, y: 50)
                     }
+                   
+
+                
             }
             .background(Color(red: 0.1, green: 0.1, blue: 0.1))
             
