@@ -18,13 +18,17 @@ struct ContentView : View {
                 }
                 
                 Image("thumb")
-                    .position(x: 600, y: 50)
+                    .position(x: self.zoomed ? 220 : 600, y: 50)
                     .scaleEffect(0.33)
                     .shadow(radius: 10)
                     .onTapGesture {
                         self.zoomed.toggle()
-                        
                     }
+                    .scaleEffect(self.zoomed ? 1.33 : 0.33)
+                    .animation(.spring())
+
+
+
                    
 
                 
