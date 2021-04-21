@@ -22,7 +22,8 @@ struct ContentView : View {
                     .scaleEffect(0.33)
                     .shadow(radius: 10)
                     .onTapGesture {
-                        self.zoomed.scaleEffect(self.zoomed ? 1.33 : 0.33)
+                        self.zoomed.toggle()
+                        
                     }
                    
 
