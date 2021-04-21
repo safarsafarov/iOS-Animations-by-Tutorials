@@ -26,11 +26,6 @@ struct ContentView : View {
                     }
                     .scaleEffect(self.zoomed ? 1.33 : 0.33)
                     .animation(.spring())
-
-
-
-                   
-
                 
             }
             .background(Color(red: 0.1, green: 0.1, blue: 0.1))
