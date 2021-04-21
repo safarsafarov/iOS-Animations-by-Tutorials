@@ -6,5 +6,5 @@ target 'SavannaTours' do
   use_frameworks!
 
   # Pods for SavannaTours
-  pod 'SwiftyBeaver'
+  pod 'ViewAnimator'
 end

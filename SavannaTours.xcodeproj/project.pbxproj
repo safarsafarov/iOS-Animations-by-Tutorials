@@ -17,6 +17,7 @@
 		9CEFEFFB22B98F8900B223AC /* HeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEFEFF922B98F8900B223AC /* HeroImage.swift */; };
 		9CEFEFFD22B990B400B223AC /* TourTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEFEFFC22B990B400B223AC /* TourTitle.swift */; };
 		9CEFEFFF22B9937700B223AC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEFEFFE22B9937700B223AC /* Launch Screen.storyboard */; };
+		C0CD58BB5C2C6F17DAC20C00 /* Pods_SavannaTours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		9CEFEFF922B98F8900B223AC /* HeroImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroImage.swift; sourceTree = "<group>"; };
 		9CEFEFFC22B990B400B223AC /* TourTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTitle.swift; sourceTree = "<group>"; };
 		9CEFEFFE22B9937700B223AC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C7C96ECC6E748B1E6F31C6AE /* Pods-SavannaTours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavannaTours.debug.xcconfig"; path = "Target Support Files/Pods-SavannaTours/Pods-SavannaTours.debug.xcconfig"; sourceTree = "<group>"; };
+		C81C9ABD82D62DBC7CC8D99C /* Pods-SavannaTours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavannaTours.release.xcconfig"; path = "Target Support Files/Pods-SavannaTours/Pods-SavannaTours.release.xcconfig"; sourceTree = "<group>"; };
+		FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavannaTours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,12 +44,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CD58BB5C2C6F17DAC20C00 /* Pods_SavannaTours.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		952F2807CDA1DE63E7D63E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C2055C222BB885D008F7E3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,8 @@
 				9C2055C222BB885D008F7E3A /* Views */,
 				9CEFEFE122B98EB100B223AC /* SavannaTours */,
 				9CEFEFE022B98EB100B223AC /* Products */,
+				A5E663F748A0C30DFCB0EFCF /* Pods */,
+				952F2807CDA1DE63E7D63E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +120,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		A5E663F748A0C30DFCB0EFCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7C96ECC6E748B1E6F31C6AE /* Pods-SavannaTours.debug.xcconfig */,
+				C81C9ABD82D62DBC7CC8D99C /* Pods-SavannaTours.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CEFEFF322B98EB300B223AC /* Build configuration list for PBXNativeTarget "SavannaTours" */;
 			buildPhases = (
+				3A74F312161ECA609474B783 /* [CP] Check Pods Manifest.lock */,
 				9CEFEFDB22B98EB100B223AC /* Sources */,
 				9CEFEFDC22B98EB100B223AC /* Frameworks */,
 				9CEFEFDD22B98EB100B223AC /* Resources */,
+				28A81F08AF1C25FBB44A44EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A81F08AF1C25FBB44A44EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SavannaTours/Pods-SavannaTours-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SavannaTours/Pods-SavannaTours-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SavannaTours/Pods-SavannaTours-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A74F312161ECA609474B783 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SavannaTours-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CEFEFDB22B98EB100B223AC /* Sources */ = {
@@ -307,6 +376,7 @@
 		};
 		9CEFEFF422B98EB300B223AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C96ECC6E748B1E6F31C6AE /* Pods-SavannaTours.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +396,7 @@
 		};
 		9CEFEFF522B98EB300B223AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81C9ABD82D62DBC7CC8D99C /* Pods-SavannaTours.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
