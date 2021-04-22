@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,23 @@
 		9CEFEFFB22B98F8900B223AC /* HeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEFEFF922B98F8900B223AC /* HeroImage.swift */; };
 		9CEFEFFD22B990B400B223AC /* TourTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEFEFFC22B990B400B223AC /* TourTitle.swift */; };
 		9CEFEFFF22B9937700B223AC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEFEFFE22B9937700B223AC /* Launch Screen.storyboard */; };
-		C0CD58BB5C2C6F17DAC20C00 /* Pods_SavannaTours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */; };
+		F61F31C9263EEA0200FE5546 /* Pods_SavannaTours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */; };
+		F61F31CA263EEA0200FE5546 /* Pods_SavannaTours.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB8505F995815E56C0FFE2 /* Pods_SavannaTours.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F61F31CB263EEA0200FE5546 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F61F31CA263EEA0200FE5546 /* Pods_SavannaTours.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C284B8822B99CEE002BF467 /* Credits.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Credits.md; sourceTree = "<group>"; };
@@ -44,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CD58BB5C2C6F17DAC20C00 /* Pods_SavannaTours.framework in Frameworks */,
+				F61F31C9263EEA0200FE5546 /* Pods_SavannaTours.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +141,6 @@
 				C7C96ECC6E748B1E6F31C6AE /* Pods-SavannaTours.debug.xcconfig */,
 				C81C9ABD82D62DBC7CC8D99C /* Pods-SavannaTours.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +156,7 @@
 				9CEFEFDC22B98EB100B223AC /* Frameworks */,
 				9CEFEFDD22B98EB100B223AC /* Resources */,
 				28A81F08AF1C25FBB44A44EC /* [CP] Embed Pods Frameworks */,
+				F61F31CB263EEA0200FE5546 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
