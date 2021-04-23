@@ -14,7 +14,7 @@ struct ContentView : View {
                         .offset(x: 0, y: -15)
                         .padding(.leading, 30)
                         .offset(x: self.zoomed ? 500 : 0, y: -15)
-                        .animation(.default)
+                        .animation(.easeOut)
 
                     
                     Spacer()
