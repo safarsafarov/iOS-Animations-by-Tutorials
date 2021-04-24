@@ -14,12 +14,10 @@ struct ContentView : View {
                         .offset(x: 0, y: -15)
                         .padding(.leading, 30)
                         .offset(x: self.zoomed ? 500 : 0, y: -15)
-                        .animation(.easeOut)
-                    for index in 1..<offsets.count {
-                      delay(seconds: Double(index)) {
-                        self.currentOffset = index
-                      }
-                    }
+                        .animation(.offset(x: offsets[currentOffset].x,
+                                           y: offsets[currentOffset].y)
+)
+
                     
                     Spacer()
                 }
@@ -31,6 +29,7 @@ struct ContentView : View {
                     .animation(.spring())
                     .onTapGesture {
                         self.zoomed.toggle()
+                        
                     }
                     .scaleEffect(self.zoomed ? 1.33 : 0.33)
                     
