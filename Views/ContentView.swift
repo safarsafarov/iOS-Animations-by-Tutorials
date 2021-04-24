@@ -15,7 +15,11 @@ struct ContentView : View {
                         .padding(.leading, 30)
                         .offset(x: self.zoomed ? 500 : 0, y: -15)
                         .animation(.easeOut)
-
+                    for index in 1..<offsets.count {
+                      delay(seconds: Double(index)) {
+                        self.currentOffset = index
+                      }
+                    }
                     
                     Spacer()
                 }
