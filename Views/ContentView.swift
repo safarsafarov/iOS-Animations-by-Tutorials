@@ -12,12 +12,9 @@ struct ContentView : View {
                 HStack {
                     TourTitle(title: "Savanna Trek", caption: "15 mile drive followed by an hour long trek")
                         .offset(x: 0, y: -15)
-                        .padding(.leading, 30)
-                        .offset(x: self.zoomed ? 500 : 0, y: -15)
-                        .animation(.offset(x: offsets[currentOffset].x,
-                                           y: offsets[currentOffset].y)
-)
-
+                        .padding(.leading,30)
+                    
+                    
                     
                     Spacer()
                 }
@@ -32,7 +29,7 @@ struct ContentView : View {
                         
                     }
                     .scaleEffect(self.zoomed ? 1.33 : 0.33)
-                    
+                
                 
             }
             .background(Color(red: 0.1, green: 0.1, blue: 0.1))
