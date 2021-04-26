@@ -21,6 +21,11 @@ struct ContentView : View {
                 
                 Image("thumb")
                     .clipShape(RoundedRectangle(cornerRadius: self.zoomed ? 40 : 500 ))
+                    .overlay(
+                        Circle()
+                            .fill(self.zoomed ? Color.clear : Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.4))
+                            .scaleEffect(0.8)
+                    )
                     .position(x: self.zoomed ? 220 : 600, y: 50)
                     .shadow(radius: 10)
                     .animation(.spring())
