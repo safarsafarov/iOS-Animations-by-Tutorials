@@ -13,15 +13,15 @@ struct ContentView : View {
                     TourTitle(title: "Savanna Trek", caption: "15 mile drive followed by an hour long trek")
                         .offset(x: 0, y: -15)
                         .padding(.leading,30)
-                    
-                    
-                    
+                        .offset(x: self.zoomed ? 500 : 0, y: -15)
+                        .animation(.default)
+
                     Spacer()
                 }
                 
                 Image("thumb")
+                    .clipShape(RoundedRectangle(cornerRadius: self.zoomed ? 40 : 500 ))
                     .position(x: self.zoomed ? 220 : 600, y: 50)
-                    .scaleEffect(0.33)
                     .shadow(radius: 10)
                     .animation(.spring())
                     .onTapGesture {
