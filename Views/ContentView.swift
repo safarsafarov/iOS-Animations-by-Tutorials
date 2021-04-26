@@ -11,7 +11,7 @@ struct ContentView : View {
             ZStack {
                 HStack {
                     TourTitle(title: "Savanna Trek", caption: "15 mile drive followed by an hour long trek")
-                        .offset(x: 0, y: -15)
+                        .offset(x: 0, y: -10)
                         .padding(.leading,30)
                         .offset(x: self.zoomed ? 500 : 0, y: -15)
                         .animation(.default)
